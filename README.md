@@ -1,12 +1,12 @@
 # Dark Castle
 
-2D platformer built in Godot as a university final project. Collect every coin in the level to unlock the next one while avoiding the traps along the way.
+2D platformer built in Godot. Collect every coin in the level to unlock the next one while avoiding the traps along the way.
 
 This was my first complete game, designed and developed entirely by me.
 
 ## Play
 
-- Web build: [itch.io link]
+- Web build: https://math-pd00.itch.io/dark-castle
 
 ## Features
 
@@ -20,9 +20,8 @@ This was my first complete game, designed and developed entirely by me.
 
 | Action | Key |
 | --- | --- |
-| Move | [fill in] |
-| Jump | [fill in] |
-| Pause | [fill in] |
+| Move | [A,D] |
+| Jump | [SPACE] |
 
 ## Screenshots
 
@@ -43,4 +42,4 @@ This was my first complete game, designed and developed entirely by me.
 
 ## Author
 
-Matheo Poma Dávila — [LinkedIn](https://www.linkedin.com/in/[your-profile])
+Matheo Poma Dávila — [LinkedIn](https://www.linkedin.com/in/matheo-poma-d%C3%A1vila-87031628a/)
