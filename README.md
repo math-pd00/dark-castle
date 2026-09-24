@@ -25,8 +25,10 @@ This was my first complete game, designed and developed entirely by me.
 
 ## Screenshots
 
-![Gameplay](docs/screenshots/gameplay.png)
-![Main menu](docs/screenshots/main-menu.png)
+<p>
+  <img src="docs/screenshots/gameplay.png" width="49%">
+  <img src="docs/screenshots/main-menu.png" width="49%">
+</p>
 
 ## Built with
 
