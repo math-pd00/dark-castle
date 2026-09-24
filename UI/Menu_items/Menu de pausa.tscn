@@ -1,0 +1,86 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://UI/Fonts/Kenney High.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/Control_Menu_de_pausa_3.gd" type="Script" id=2]
+[ext_resource path="res://Assets/IMG/barsHorizontal.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 15
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 15
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[node name="Control" type="Control"]
+margin_bottom = 4.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Boton de pausa_3" type="TextureButton" parent="."]
+margin_left = 1320.88
+margin_top = 11.3137
+margin_right = 1370.88
+margin_bottom = 61.3137
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Efectos" type="Tween" parent="."]
+pause_mode = 2
+playback_speed = 2.5
+playback/speed = 2.5
+
+[node name="Botones" type="Control" parent="."]
+margin_left = -43.9779
+margin_top = 49.2206
+margin_right = -1.97789
+margin_bottom = 73.2206
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Continue" type="Button" parent="Botones"]
+pause_mode = 2
+margin_left = -276.987
+margin_top = 252.945
+margin_right = -220.987
+margin_bottom = 272.945
+rect_scale = Vector2( 4, 4 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color_hover = Color( 0.0313726, 0.945098, 0.745098, 1 )
+shortcut_in_tooltip = false
+action_mode = 0
+text = "Continue"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Exit" type="Button" parent="Botones"]
+pause_mode = 2
+margin_left = -327.787
+margin_top = 337.395
+margin_right = -241.787
+margin_bottom = 357.395
+rect_scale = Vector2( 4, 4 )
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_hover = Color( 0.94902, 0.027451, 0.027451, 1 )
+shortcut_in_tooltip = false
+action_mode = 0
+text = "Return to main"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Boton de pausa_3" to="." method="_on_Boton_de_pausa_3_pressed"]
+[connection signal="pressed" from="Botones/Continue" to="." method="_on_Continue_pressed"]
+[connection signal="pressed" from="Botones/Exit" to="." method="_on_Exit_pressed"]

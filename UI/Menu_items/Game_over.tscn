@@ -1,0 +1,125 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scripts/Game_over.gd" type="Script" id=1]
+[ext_resource path="res://UI/Fonts/Kenney High.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://UI/Fonts/Kenney Mini.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/Tilesets/UIbg.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Tilesets/buttonSmall.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Tilesets/buttonLarge.png" type="Texture" id=6]
+[ext_resource path="res://Sound/SFX/382310__myfox14__game-over-arcade.wav" type="AudioStream" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 15
+outline_size = 1
+outline_color = Color( 0.0196078, 0.0196078, 0.0196078, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=2]
+length = 0.5
+step = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -48, -651 ), Vector2( -48, 33 ) ]
+}
+
+[sub_resource type="DynamicFont" id=3]
+size = 15
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Game_over" type="Control"]
+margin_left = -52.0
+margin_top = -657.0
+margin_right = 249.0
+margin_bottom = -592.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color( 0.145098, 0.0235294, 0.254902, 1 )
+margin_left = 484.0
+margin_top = 54.0
+margin_right = 748.0
+margin_bottom = 318.0
+rect_scale = Vector2( 2.19056, 2.10588 )
+texture = ExtResource( 4 )
+
+[node name="Restart" type="TextureButton" parent="."]
+pause_mode = 2
+margin_left = 658.029
+margin_top = 560.0
+margin_right = 854.029
+margin_bottom = 630.0
+rect_scale = Vector2( 1.11043, 1.2542 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "
+"
+}
+
+[node name="Label" type="Label" parent="Restart"]
+margin_left = 25.3231
+margin_top = 6.42928
+margin_right = 91.3231
+margin_bottom = 49.4293
+rect_scale = Vector2( 3.59091, 3.65759 )
+custom_fonts/font = SubResource( 1 )
+text = "RESTART
+"
+align = 3
+
+[node name="anim" type="AnimationPlayer" parent="."]
+pause_mode = 2
+anims/mover = SubResource( 2 )
+
+[node name="Total" type="Label" parent="."]
+margin_left = 460.686
+margin_top = 329.255
+margin_right = 542.686
+margin_bottom = 346.255
+rect_scale = Vector2( 4, 4 )
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "TOTAL SCORE:"
+align = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Game_Over" type="Label" parent="."]
+margin_left = 419.029
+margin_top = 57.7574
+margin_right = 553.029
+margin_bottom = 81.7574
+rect_scale = Vector2( 8.13192, 7.44869 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.105882, 1, 0.74902, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "GAME OVER"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gameover" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+[connection signal="pressed" from="Restart" to="." method="_on_Restart_pressed"]
+[connection signal="animation_finished" from="anim" to="." method="_on_anim_animation_finished"]

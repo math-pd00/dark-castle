@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Upgrate.wav-940b3a6986ccd79b9c81c4f2b89563c0.sample"
+
+[deps]
+
+source_file="res://Sound/SFX/Upgrate.wav"
+dest_files=[ "res://.import/Upgrate.wav-940b3a6986ccd79b9c81c4f2b89563c0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

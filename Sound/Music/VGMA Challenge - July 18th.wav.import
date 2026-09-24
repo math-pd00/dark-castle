@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/VGMA Challenge - July 18th.wav-1fddf1ba7c403e1ec02c0543b03e13cf.sample"
+
+[deps]
+
+source_file="res://Sound/Music/VGMA Challenge - July 18th.wav"
+dest_files=[ "res://.import/VGMA Challenge - July 18th.wav-1fddf1ba7c403e1ec02c0543b03e13cf.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

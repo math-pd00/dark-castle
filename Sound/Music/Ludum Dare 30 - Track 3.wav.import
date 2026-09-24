@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Ludum Dare 30 - Track 3.wav-afc04b77379c7e431b333c305f3820dc.sample"
+
+[deps]
+
+source_file="res://Sound/Music/Ludum Dare 30 - Track 3.wav"
+dest_files=[ "res://.import/Ludum Dare 30 - Track 3.wav-afc04b77379c7e431b333c305f3820dc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
