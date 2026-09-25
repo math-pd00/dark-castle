@@ -25,23 +25,21 @@ This was my first complete game, designed and developed entirely by me.
 
 ## Screenshots
 
-<p>
-  <img src="docs/screenshots/gameplay.png" width="49%">
-  <img src="docs/screenshots/main-menu.png" width="49%">
-</p>
+![Gameplay](docs/screenshots/gameplay.png)
+![Main menu](docs/screenshots/main-menu.png)
 
 ## Built with
 
-- Godot Engine [version]
+- Godot Engine [3.6]
 - GDScript
 
 ## Run locally
 
-1. Install Godot [version].
+1. Install Godot [3.6].
 2. Clone this repository.
 3. Open Godot, choose **Import**, and select the `project.godot` file.
 4. Press **F5** to run the game.
 
 ## Author
 
-Matheo Poma Dávila — [LinkedIn](https://www.linkedin.com/in/matheo-poma-d%C3%A1vila-87031628a/)
+Matheo Poma Dávila — [LinkedIn] https://www.linkedin.com/in/matheo-poma-d%C3%A1vila-87031628a/
